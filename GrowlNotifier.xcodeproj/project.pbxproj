@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A0D652306D2DC5700FB3DAA /* Info.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0A0D652206D2DC5700FB3DAA /* Info.rtf */; };
-		0AD26E1207F79C2F00975F71 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AD26CD707F7967100975F71 /* Growl.framework */; };
+		CDF5340D13DC798400A48B9F /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF5340C13DC798400A48B9F /* Growl.framework */; };
 		E1C4EF9406B8597600FA8819 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1C4EF9206B8597600FA8819 /* Localizable.strings */; };
 		E1EAB046068128A200774DFF /* QSGrowlNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EAB045068128A200774DFF /* QSGrowlNotifier.m */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0AD26E1207F79C2F00975F71 /* Growl.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -28,7 +26,6 @@
 
 /* Begin PBXFileReference section */
 		0A0D652206D2DC5700FB3DAA /* Info.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Info.rtf; sourceTree = "<group>"; };
-		0AD26CD707F7967100975F71 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		14A8D0C310CE52E4003857E3 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		14A8D0C410CE52E4003857E3 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		14A8D0C510CE52E4003857E3 /* Developer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
@@ -40,6 +37,7 @@
 		32DBCF980370C29C00C91783 /* QSGrowlNotifier_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSGrowlNotifier_Prefix.pch; sourceTree = "<group>"; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; languageSpecificationIdentifier = html; path = Info.plist; sourceTree = "<group>"; };
 		8D1AC9740486D14A00FE50C9 /* Growl Module.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Growl Module.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDF5340C13DC798400A48B9F /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		E1C4EF9306B8597600FA8819 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E1EAB045068128A200774DFF /* QSGrowlNotifier.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = QSGrowlNotifier.m; sourceTree = "<group>"; };
@@ -51,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF5340D13DC798400A48B9F /* Growl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +90,7 @@
 		2E58F364FFB232C311CA0CBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0AD26CD707F7967100975F71 /* Growl.framework */,
+				CDF5340C13DC798400A48B9F /* Growl.framework */,
 				DD92D38A0106425D02CA0E72 /* Cocoa.framework */,
 			);
 			name = Frameworks;
@@ -182,7 +181,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1C4EF9406B8597600FA8819 /* Localizable.strings in Resources */,
-				0A0D652306D2DC5700FB3DAA /* Info.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +229,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A8D0C610CE52E4003857E3 /* QSPlugIn_Debug.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "Growl Module";
 			};
 			name = Debug;
@@ -239,6 +241,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A8D0C810CE52E4003857E3 /* QSPlugIn_Release.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "Growl Module";
 			};
 			name = Release;
