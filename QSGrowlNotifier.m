@@ -50,8 +50,9 @@ Class GAB;
 - (void) displayNotificationWithAttributes:(NSDictionary *)attributes {
 	
 	NSString *type = QSGrowlNotification;
-	if ([[attributes objectForKey:QSNotifierType] isEqualToString:@"QSiTunesTrackChangeNotification"])
+	if ([[attributes objectForKey:QSNotifierType] isEqualToString:@"QSiTunesTrackChangeNotification"]) {
 		type = QSiTunesNotification;
+	}
 	
 	NSString *text = [attributes objectForKey:QSNotifierText];
 	if (!text)

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CDF5340D13DC798400A48B9F /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF5340C13DC798400A48B9F /* Growl.framework */; };
+		CDF5345813DC7CA200A48B9F /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = CDF5340C13DC798400A48B9F /* Growl.framework */; };
 		E1C4EF9406B8597600FA8819 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1C4EF9206B8597600FA8819 /* Localizable.strings */; };
 		E1EAB046068128A200774DFF /* QSGrowlNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EAB045068128A200774DFF /* QSGrowlNotifier.m */; };
 /* End PBXBuildFile section */
@@ -22,10 +22,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDF5345F13DC7CAC00A48B9F /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CDF5345813DC7CA200A48B9F /* Growl.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A0D652206D2DC5700FB3DAA /* Info.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Info.rtf; sourceTree = "<group>"; };
 		14A8D0C310CE52E4003857E3 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		14A8D0C410CE52E4003857E3 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		14A8D0C510CE52E4003857E3 /* Developer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
@@ -49,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDF5340D13DC798400A48B9F /* Growl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +81,6 @@
 		0259C582FE90428111CA0C5A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0A0D652206D2DC5700FB3DAA /* Info.rtf */,
 				E1C4EF9206B8597600FA8819 /* Localizable.strings */,
 				8D1AC9730486D14A00FE50C9 /* Info.plist */,
 			);
@@ -136,6 +144,7 @@
 			buildConfigurationList = 0A4D265508A1ECE200C8DD94 /* Build configuration list for PBXNativeTarget "Growl Module" */;
 			buildPhases = (
 				8D1AC9660486D14A00FE50C9 /* Resources */,
+				CDF5345F13DC7CAC00A48B9F /* Copy Frameworks */,
 				8D1AC96A0486D14A00FE50C9 /* Sources */,
 				8D1AC96E0486D14A00FE50C9 /* Frameworks */,
 				0AD26E1007F79C2300975F71 /* CopyFiles */,
@@ -253,6 +262,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A8D0C410CE52E4003857E3 /* Debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -261,6 +272,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A8D0CA10CE52E4003857E3 /* Release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				SDKROOT = macosx;
 			};
 			name = Release;

@@ -15,11 +15,11 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.7.2</string>
+	<string>1.1.2</string>
 	<key>CFBundleVersion</key>
-	<string>4F</string>
+	<string>5C</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2004, 2005, Blacktree, Inc.</string>
+	<string>Copyright © 2011, QSApp.com</string>
 	<key>NSPrincipalClass</key>
 	<string>QSGrowlNotifier</string>
 	<key>QSPlugIn</key>
@@ -27,11 +27,10 @@
 		<key>author</key>
 		<string>Blacktree, Inc.</string>
 		<key>extendedDescription</key>
-		<string>Provides notifications via &lt;a href="http://www.growl.info"&gt;Growl&lt;/a&gt;.</string>
+		<string>Provides notifications via &lt;a href="http://www.growl.info"&gt;Growl&lt;/a&gt;.&lt;br /&gt; &lt;br /&gt;
+	To enable Growl for notifications, open the &lt;a href="qs://preferences#QSSettingsPanePlaceholder"&gt;Preferences Pane&lt;/a&gt; and select 'Handlers' from the sidebar.</string>
 		<key>icon</key>
 		<string>com.growl.GrowlHelperApp</string>
-		<key>infoFile</key>
-		<string>Info.rtf</string>
 		<key>relatedBundles</key>
 		<array>
 			<string>com.Growl.GrowlHelperApp</string>
