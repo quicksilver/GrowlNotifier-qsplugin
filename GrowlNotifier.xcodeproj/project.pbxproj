@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -158,7 +158,7 @@
 		0259C573FE90428111CA0C5A /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 0A4D265908A1ECE200C8DD94 /* Build configuration list for PBXProject "GrowlNotifier" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -247,6 +247,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A8D0C410CE52E4003857E3 /* Debug.xcconfig */;
 			buildSettings = {
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -254,6 +255,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A8D0CA10CE52E4003857E3 /* Release.xcconfig */;
 			buildSettings = {
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
