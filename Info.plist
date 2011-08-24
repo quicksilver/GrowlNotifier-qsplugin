@@ -15,9 +15,9 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2.2</string>
+	<string>1.2.3</string>
 	<key>CFBundleVersion</key>
-	<string>5C</string>
+	<string>5D</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2011, QSApp.com</string>
 	<key>NSPrincipalClass</key>
