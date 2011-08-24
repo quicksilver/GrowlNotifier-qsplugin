@@ -238,11 +238,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A8D0C610CE52E4003857E3 /* QSPlugIn_Debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "Growl Module";
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
@@ -250,11 +252,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A8D0C810CE52E4003857E3 /* QSPlugIn_Release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "Growl Module";
+				SDKROOT = "";
 			};
 			name = Release;
 		};
