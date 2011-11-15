@@ -21,7 +21,7 @@ Class GAB;
 	NSBundle *plugin = [NSBundle bundleForClass:self];
 	NSString *path = [[plugin privateFrameworksPath] stringByAppendingPathComponent:@"Growl.framework"];
 	NSBundle *bundle = [NSBundle bundleWithPath:path];
-	if ([bundle load]) {
+	if (path && [bundle load]) {
 		GAB = NSClassFromString(@"GrowlApplicationBridge");
 	} else {
 		GAB = nil;

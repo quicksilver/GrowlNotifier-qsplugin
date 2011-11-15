@@ -165,6 +165,9 @@
 /* Begin PBXProject section */
 		0259C573FE90428111CA0C5A /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 0A4D265908A1ECE200C8DD94 /* Build configuration list for PBXProject "GrowlNotifier" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
