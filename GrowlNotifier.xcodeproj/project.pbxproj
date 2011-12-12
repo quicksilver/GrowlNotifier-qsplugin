@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD7347791496153200AA8622 /* QSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7347751496153200AA8622 /* QSCore.framework */; };
 		CDF5345813DC7CA200A48B9F /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = CDF5340C13DC798400A48B9F /* Growl.framework */; };
 		E1C4EF9406B8597600FA8819 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1C4EF9206B8597600FA8819 /* Localizable.strings */; };
 		E1EAB046068128A200774DFF /* QSGrowlNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EAB045068128A200774DFF /* QSGrowlNotifier.m */; };
@@ -47,6 +48,10 @@
 		32DBCF980370C29C00C91783 /* QSGrowlNotifier_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSGrowlNotifier_Prefix.pch; sourceTree = "<group>"; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; languageSpecificationIdentifier = html; path = Info.plist; sourceTree = "<group>"; };
 		8D1AC9740486D14A00FE50C9 /* Growl Module.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Growl Module.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7347751496153200AA8622 /* QSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSCore.framework; sourceTree = QSFramework; };
+		CD7347761496153200AA8622 /* QSEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSEffects.framework; sourceTree = QSFramework; };
+		CD7347771496153200AA8622 /* QSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSFoundation.framework; sourceTree = QSFramework; };
+		CD7347781496153200AA8622 /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QSInterface.framework; path = ../../../../../../private/tmp/QS/build/Release/QSInterface.framework; sourceTree = "<group>"; };
 		CDF5340C13DC798400A48B9F /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		E1C4EF9306B8597600FA8819 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD7347791496153200AA8622 /* QSCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +104,10 @@
 		2E58F364FFB232C311CA0CBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD7347751496153200AA8622 /* QSCore.framework */,
+				CD7347761496153200AA8622 /* QSEffects.framework */,
+				CD7347771496153200AA8622 /* QSFoundation.framework */,
+				CD7347781496153200AA8622 /* QSInterface.framework */,
 				CDF5340C13DC798400A48B9F /* Growl.framework */,
 				DD92D38A0106425D02CA0E72 /* Cocoa.framework */,
 			);
@@ -245,6 +255,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					/tmp/QS/build/Release,
 				);
 				PRODUCT_NAME = "Growl Module";
 				SDKROOT = "";
@@ -259,6 +270,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					/tmp/QS/build/Release,
 				);
 				PRODUCT_NAME = "Growl Module";
 				SDKROOT = "";
