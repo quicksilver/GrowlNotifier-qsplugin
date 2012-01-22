@@ -57,6 +57,10 @@ Class GAB;
 	NSString *text = [attributes objectForKey:QSNotifierText];
 	if (!text)
 		text = @"";
+	NSAttributedString *details = [attributes objectForKey:QSNotifierDetails];
+	if (details) {
+		text = [text stringByAppendingFormat:@"\n%@", [details string]];
+	}
 	
 	[GAB notifyWithTitle:[attributes objectForKey:QSNotifierTitle]
                  description:text
