@@ -1,3 +1,8 @@
+Growl Plugin Discontinued
+=========================
+
+The Growl notification framework has been discontinued, and is no longer supported on macOS. If you were using the Growl Notification Plugin for Notifications in Quicksilver, then please switch to 'Notification Hub' instead. This plugin will no longer be updated.
+
 About Quicksilver Plugins on Github
 ===================================
 
